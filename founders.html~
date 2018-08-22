@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<div id="heading"><h2>WELCOME TO KNOWLEDGE DROPS!</h2></div>
+
+<div id="navi">
+<nav>
+   <ul>
+      <li><a href="index.html" >Home</a></li>   
+        <li><a href="#" >About Us</a>
+              <ul>
+                 <li><a href="groups.html" >groups</a></li>   
+                <li><a href="founder.html" >founders</a></li>   
+                <li><a href="membership.html" >membership</a></li>   
+                <li><a href="benefits.html" >benefits</a></li>   
+                 <li><a href="location.html" >location</a></li> 
+                                
+              </ul>        
+        </li>   
+         <li><a href="questions.html" >Questions & Answer</a></li>   
+          <li><a href="contact.html" >Contact</a>  
+           
+           
+             <ul>
+             
+         <li><a href="about.html" >about</a></li>   
+         <li><a href="gallary.html" >gallery</a></li>      
+           <li><a href="join.html" >join</a></li>               
+             </ul>           
+           </li>   
+            
+   </ul>
+
+
+</nav>
+</div>
+>
+
+<div class="wrapper">
+<h1>SORRY THIS PAGE IS UNDER CONSTRUCTION </h1>
+</div>
+
+<div class="dir">
+<a href="index.html"><img class="left" src="left.png" alt="GO Left" width="4%"></a>
+<a href="#"><img class="right" src="right.png" alt="GO Right" width="4%"></a>
+</div>
+</body>
+<footer>
+<label id="labels">reach us at the email below</label></br>
+<a  href="https://www.google.com"type="email">knowledgedrop@gmail.com</a></footer>
+</html>
