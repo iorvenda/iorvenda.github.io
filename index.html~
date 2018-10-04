@@ -19,7 +19,8 @@
                 <li><a href="#" >membership</a></li>   
                 <li><a href="#" >benefits</a></li>   
                  <li><a href="#" >location</a></li> 
-                                
+                  <li><a href="profile.html" >location</a></li>  
+                  <li><a href="mobile.html" >location</a></li> 
               </ul>        
         </li>   
          <li><a href="#" >Questions & Answer</a></li>   
