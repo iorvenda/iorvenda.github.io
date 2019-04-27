@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
+    <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Felipa" rel="stylesheet">
+<script src="jquery-3.3.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>Reading more</title>
+  <style media="screen">
+  *{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: lighter;
+  }
+
+  img{
+
+    object-fit: cover;
+    position: fixed;
+   z-index: -1;
+   opacity: .3;
+
+  }
+  .readings{
+    background-color: #DFE9FE;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: auto;
+    margin-top: 5%;
+    padding:10%;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 10%;
+
+  }
+  h1{
+    padding-bottom: 4%;
+    text-align: center;
+    text-shadow: 1px 1px blue;
+    font-family: cursive;
+  }
+  </style>
+  </head>
+  <body>
+    <img src="scr.png" alt="">
+    <h1>Welcome To My Page</h1>
+    <div class="readings">
+
+      <article id="article">
+        &nbsp &nbsp Web Developer, master of elegant web designs and mobile applications including
+        backend development. My weapons of choice include but not limited to html, css and javascript, <br>swift and Java.
+        Your web page does not have to be static add some beauty to it. A hint of JQuery could be the ingredient and a developer will the chef.
+        Lets  design something awlsome today!<br>
+          &nbsp &nbsp Attract more and bring a stronger representation to your career, your passion , business or organization.<br> Nowadays everything is online so why wouldn't your presence be?
+          If you have an idea contact me and we can both brain storm about it.
+      </article>
+      <script>
+      $(function(){
+        $( "#article" ).hide(0).show(5300);
+
+      });
+      </script>
+    </div>
+  </body>
+</html>

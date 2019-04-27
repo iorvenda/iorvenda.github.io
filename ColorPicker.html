@@ -1,0 +1,76 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
+
+		<title>Color Picker</title>
+		<style>
+		body{
+		margin:0px;
+		padding:0px;
+		}
+ h2{
+ 	text-align: center;
+
+ }
+.pickers table{
+width: 255px;
+height: 255px;
+background-color: gray;
+}
+#hexcode {
+	text-transform: uppercase;
+}
+.hexcode {
+	margin-left: auto;
+	margin-right: auto;
+}
+     @media only screen and (max-width: 375px)
+     {
+
+
+
+
+
+     }
+		</style>
+		<script>
+		function show()
+		{
+
+
+			var red = parseInt(document.getElementById('red').value);
+			var green = parseInt(document.getElementById('green').value);
+			var blue = parseInt(document.getElementById('blue').value);
+     var hexred = (red<16)? "0" + red.toString(16) : red.toString(16);
+		 var hexgreen = (green<16)? "0" + green.toString(16) : green.toString(16);
+		 var hexblue = (blue<16)? "0" + blue.toString(16) : blue.toString(16);
+
+		 document.getElementById("hexcode").innerHTML ="#" +hexred+hexgreen+hexblue;
+		 document.body.style.backgroundColor=hexred+hexgreen+hexblue;
+		}
+		</script>
+	</head>
+	<body>
+
+<form class="pickers">
+	<table>
+		<tr>
+			<td>	Red:</td><td><input onmousemove="show()"id ="red" type="range" name="red" value="0" min="0" max="255"></td>
+		</tr>
+		<tr>
+			<td>Green:</td><td><input onmousemove="show()" id="green" type="range" name="red" value="0" min="0" max="255"></td>
+		</tr>
+		<tr>
+			<td>Blue:</td><td><input onmousemove="show()" id="blue" type="range" name="red" value="0" min="0" max="255"></td>
+		</tr>
+	</table>
+
+
+
+</form>
+<div class="hexcode">
+	<h2 id="hexcode" >#0000</h2>
+</div>
+
+	</body>
+</html>

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
+    <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Felipa" rel="stylesheet">
+<script src="jquery-3.3.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>Iorvenda Akem</title>
+    <style>
+    *{
+      box-sizing: border-box;
+      padding: 0px;
+      margin: 0px;
+      background-color: #DFE9FE;
+    }
+    body{
+      font-family: "Lato", sans-serif;
+      height: 100%;
+      padding: 0px;
+      margin: 0px;
+      font-weight: 100;
+    }
+  #top{
+
+   background-color: #DFE9FE;
+   width: 100%;
+  }
+  #pic{
+    position: relative;
+  width:180px;
+  height:180px; border-radius:90px;
+  border: 2px solid black;padding:4px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+    footer{
+  height: 100%;
+  background-color: gray;
+  padding: 2%;
+    }
+
+    #img{
+    background-image: url("scr.png");
+    width: 100%;
+    height:600px;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    opacity: .3;
+    z-index: 0;
+      }
+
+      h1{
+        font-family: 'Felipa', cursive;
+        margin-top:0px;
+        padding-top: 2px;
+        color:#1B1E1F;
+        font-size: 200%;
+
+      }
+    .main{
+      width: 100%;
+      height: auto;
+      background-color:#DFE9FE;
+      display: grid;
+      grid-template-columns: auto auto;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 4%;
+
+    }
+     #a{
+      margin: 1%;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 4px;
+      text-align: center;
+      border-top-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+      font-weight: bold;
+
+    }
+    p{
+     font-family: 'Felipa', cursive;
+      text-align: center;
+      font-size: 150%;
+      color: white;
+    }
+    .contact{
+      padding:10%;
+      text-align: center;
+      margin-top:10%;
+    }
+    .WhattoExpect{
+      text-align: center;
+      padding: 6%;
+      display: grid;
+      grid-template-columns: 20% 20% 20% 20% 20%;
+      width: auto;
+      height: 80px;
+grid-column-gap: 6px;
+
+    }
+    .WhattoExpect{
+
+    }
+    a{
+      text-decoration: none;
+    }
+    a:hover{
+      color:green;
+    }
+    a:visited{
+      color:orange;
+    }
+    #top #welcomedescription{
+         position:absolute;
+         left:25%;
+         top:45%;
+         font-weight: bold;
+         font-family:sans-serif;
+         font-size: 250%;
+    color: black;
+    }
+    #menu{
+      float:right;
+    }
+    #left{
+      font-weight: lighter;
+      font-family: sans-serif;
+      padding: 2%;
+    }
+    h2{
+      text-align: center;
+    }
+    .work_done{
+
+      min-height: 140px;
+      max-height: 100px;
+    padding: 4px;
+
+    }
+    @media only screen and (max-width: 480px)
+
+    {body{
+      height: 100%;
+      background-color:
+    }
+      .main{
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+        padding-left: 2%;
+        padding-right: 2%;
+        font-family: cursive;
+    }
+    #welcomedescription{
+
+  display: none;
+      color:black;
+font-family:sans-serif;
+      }
+      #img{
+      background-image: url("scr2.png");
+      width: 100%;
+      height:auto;
+      background-size:cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      opacity: .3;
+      z-index: 0;
+        }
+      h1{
+        font-size: 110%;
+        font-family:fantasy;
+        color:#1B1E1F;
+      }
+   article{
+     font-family:serif;
+   }
+
+  .WhattoExpect{
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .contact{
+    display:none;
+  }
+  footer{
+display: none;
+  }
+  }
+
+    @media only screen and (max-width: 320px)
+
+    {body{
+      height: 100%;
+      background-color:
+    }
+      .main{
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+        padding-left: 2%;
+        padding-right: 2%;
+        font-family: cursive;
+    }
+    #welcomedescription{
+
+  display: none;
+      color:black;
+font-family:sans-serif;
+      }
+      #img{
+      background-image: url("scr3.png");
+      width: 100%;
+      height:auto;
+      background-size:cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      opacity: .3;
+      z-index: 0;
+        }
+      h1{
+        font-size: 110%;
+        font-family:fantasy;
+        color:#1B1E1F;
+      }
+   article{
+     font-family:serif;
+   }
+
+  .WhattoExpect{
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .contact{
+    display: none;
+    position: fixed;
+  }
+  footer{
+display: none;
+  }
+}
+    @media only screen and (max-width: 375px)
+
+    {body{
+      height: 100%;
+      background-color:
+    }
+      .main{
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+        padding-left: 2%;
+        padding-right: 2%;
+        font-family: cursive;
+    }
+    #welcomedescription{
+
+  display: none;
+      color:black;
+font-family:sans-serif;
+      }
+      #img{
+      display: none;
+      }
+      h1{
+        font-size: 110%;
+        font-family:fantasy;
+        color:#1B1E1F;
+      }
+   article{
+     font-family:serif;
+   }
+
+  .WhattoExpect{
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .contact{
+    display:none;
+  }
+  footer{
+display: none;
+  }
+  }
+
+  @media only screen and (max-width: 414px)
+
+  {body{
+    height: 100%;
+    background-color:
+  }
+    .main{
+      display: grid;
+      grid-template-columns: auto;
+      width: 100%;
+      padding-left: 2%;
+      padding-right: 2%;
+      font-family: cursive;
+  }
+  #welcomedescription{
+
+display: none;
+    color:black;
+    font-family:sans-serif;
+
+    }
+    #img{
+    display: none;
+
+    }
+    h1{
+      font-size: 110%;
+      font-family:fantasy;
+      color:#1B1E1F;
+    }
+    #a{
+      font-family: cursive;
+    }
+ article{
+   font-family:serif;
+ }
+
+.WhattoExpect{
+  margin-top: 2%;
+  display: grid;
+  grid-template-columns: auto;
+}
+.contact{
+  display:none;
+}
+footer{
+display: none;
+}}
+    </style>
+  </head>
+  <body onload="year()">
+
+<div id="top">
+  <a href="tel:1-616-255-3827" style="float:right">616-232-2330</a><br>
+  <a href="mailTo:iorvenda@yahoo.com" style="float:right">iorvenda@yahoo.com</a>
+  <img id ="pic"src="profileimg.jpg">
+
+<p id="welcomedescription">Application & Web Developer,<br>
+experience counts and thats why I am here!" </p>
+<div id="img">
+
+  <script>
+  $(function(){
+    //$( "#img" ).hide(0).show(3300);
+      $("#img").hide(0).show(3000).fadeIn(3000);
+  });
+  </script>
+
+</div>
+
+
+<div class="main">
+<div class="mainright">
+
+  <script>
+  $(function(){
+    //$( "#img" ).hide(0).show(3300);
+      $("#pic").hide(0).fadeIn(6500);
+  });
+  </script>
+<article id="a" style="  font-size: 200%;">
+
+  I am Iorvenda Akem, a web Developer from Michigan with a passion for designing Software, Robotics, AI and a love for sports
+<a href="portfolio.html">more...</a>
+  </article>
+</div>
+
+</article>
+<div class="mainleft">
+
+  <article id="left">
+
+
+      Web Developer, master of elegant web designs and mobile applications including
+      backend development. My weapons of choice include but not limited to html, css and javascript, swift and Java.
+      Your web page does not have to be static add some beauty to it. A hint of JQuery could be the ingredient and a developer will the chef.
+      Lets  design something awlsome today!
+        <a href="connecting.html">Read more...</a>
+  </article>
+</div>
+
+</div>
+
+    <h2>The Steps</h2>
+
+<div class="WhattoExpect">
+
+
+
+<div class="work_done">
+    <a href="readmore.html">First Meeting</a><br>
+    We Discuss what the project is going to do<br>
+    what possible technologies will be used.
+    <a href="readmore.html">read more...</a>
+</div>
+<div class="work_done">
+    <a href="readmore.html">Draft Process</a><br>
+    At this stage I will write a Pseudocode and a skeleton and<br>
+    of what the application will look after completion.
+    <a href="readmore.html">read more...</a>
+</div>
+<div class="work_done">
+  <a href="readmore.html">Designing the Prototype</a><br>
+  A rough archetype will be implemented,<br> images will be picked and colors to include background colors will be added <br>
+  what possible technologies will be used.
+  <a href="readmore.html">read more...</a>
+</div>
+<div class="work_done">
+  <a href="readmore.html">Testing</a><br>
+  The finished project will then be ran through a vigous testing systems<br>
+  and browsers for compatibility.
+</div>
+<div class="work_done">
+  <a href="readmore.html">Completion</a><br>
+  The best and final step will to hand over the completed project. After this your will have free consultations and updates for 30 days.
+</div>
+
+
+
+
+
+
+
+
+</div>
+<div class="contact">
+  <h2>Get in Touch</h2>
+ Phone: <a href="tel:1-616-255-3827">616-232-2330</a><br>
+  Email: <a href="mailTo:iorvenda@yahoo.com">iorvenda@yahoo.com</a>
+
+
+</div>
+  <script >
+  function year() {
+    var  year = new Date();
+    var years = year.getFullYear();
+    document.getElementById("years").innerHTML="copy @iorvendaakem"+" "+years;
+  }
+
+  </script>
+  <footer style="text-align:center; font-size:80%" id="years"></footer>
+  </body>
+
+</html>
