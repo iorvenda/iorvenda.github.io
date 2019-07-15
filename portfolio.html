@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
+    <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Felipa" rel="stylesheet">
+<script src="jquery-3.3.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <style media="screen">
+    *{
+      box-sizing: border-box;
+      padding: 0px;
+      margin: 0px;
+      background-color: #DFE9FE;
+    }
+    body{
+      font-family: "Lato", sans-serif;
+      height: 100%;
+      padding: 0px;
+      margin: 0px;
+      font-weight: 100;
+    }
+    h2{
+      text-align: center;
+      padding-top: 4%;
+    }
+    .main{
+      text-align: center;
+      margin-top: 14%;
+      margin-left: 4%;
+      margin-right: 4%;
+  border: 1px solid black;
+   padding: 50px;
+    }
+    h1{
+      text-align: center;
+
+      border: 3px solid black;
+      width:300px;
+      margin: auto;
+    }
+    #ampm{
+      font-size: 40%;
+    }
+@media only screen and (min-width: 500px)
+{
+  body{
+    margin-left:20%;
+    margin-right:20%;
+  }
+}
+    </style>
+    <script>
+  setInterval(time,1000);
+    function time() {
+
+
+    var date = new Date();
+      var hr = date.getHours();
+      var min = date.getMinutes();
+      document.getElementById("first").innerHTML=hr;
+      document.getElementById("third").innerHTML=min;
+      if(hr<10)
+      {
+        document.getElementById("first").innerHTML="0"+hr;
+      }
+      if(min<10)
+      {
+      document.getElementById("third").innerHTML="0"+min;
+      }
+      if(hr>23)
+      {
+        document.getElementById("ampm").innerHTML="AM";
+
+      }
+      else {
+        document.getElementById("ampm").innerHTML="PM";
+      }
+    }
+    </script>
+  </head>
+  <body onload="time()">
+    <h1><label id="first"></label><label id="second">:</label><label id="third"></label><label id="ampm"></label></h1>
+
+     <h2>Projects</h2><hr>
+<div class="main">
+  <div class="main1">
+      <a href="roombud.html">RoomBuds</a>
+      <article class=""style="padding-bottom:2%;padding-top:1%">
+        Roommates matching application build with html, css javascript and java severlets, jsp, this application is the services that matches students and working professionals with people of similar areas for study, work and hobbies while providing commodation services with it.
+      </article>
+  </div>
+  <div class="">
+      <a href="ColorPicker.html">Color Picker</a>
+      <article class="" style="padding-bottom:2%;padding-top:1%">
+        This a color picker for those in need of hexcoded colors. Drag the sliders on read the desired color from the page.
+      </article>
+  </div>
+
+      <div class="">
+        <a href="math.html">Math Widz</a>
+        <article class=""style="padding-bottom:2%;padding-top:1%">
+          Children math Game this an addition, substraction game that kids can play. Set the number range and this machine will populate the numbers within that range and randomly generate math problems using those nubmers.
+        </article>
+      </div>
+      <div class="">
+        <a href=" https://iorvenda.github.io/grwork/">work agency</a>
+        <article class="">
+          Project I am currently working on.
+        </article>
+      </div>
+      <div class="">
+        <a href="https://iorvenda.github.io/law/">law office</a>
+
+        <article class="">
+          Project I am currently working on.
+        </article>
+      </div>
+      <div class="">
+        <a href="https://iorvenda.github.io/theworldsvoice/">language services</a>
+        <article class="">
+          when finished its supposed to be a site offering languages services to the commmunity
+        </article>
+      </div>
+</div>
+
+
+
+
+<script>
+function year() {
+  var  year = new Date();
+  var years = year.getFullYear();
+  document.getElementById("years").innerHTML="copy @iorvendaakem"+" "+years;
+}
+
+</script>
+<footer style="text-align:center; font-size:80%" id="years"></footer>
+  </body>
+
+
+</html>
