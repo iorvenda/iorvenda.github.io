@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .math{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        margin:100px 100px 20px 100px;
+      }
+      #left,#sign,#right,#equal,#answer{
+        font-size: 250%;
+      }
+      .range{
+        text-align: center;
+
+      }
+    </style>
+    <script>
+
+ var range =0;
+   var l=0;
+   var r=0;
+        function set() {
+         range= parseInt(document.getElementById("range").value);
+        document.getElementById("left").innerHTML=Math.floor(Math.random() * range);
+         document.getElementById("right").innerHTML=Math.floor(Math.random() * range);
+
+        }
+        function check() {
+        var a = parseInt(document.getElementById("ans").value);
+           alert( parseInt(document.getElementById("left")));
+          if((l+r)==a){
+            document.getElementById("confirm").innerHTML="Correct!";
+
+          }
+          else{
+            document.getElementById("confirm").innerHTML="Wrong!";
+          }
+        }
+        function contruction()
+        {
+          alert("Sorry this page is still under contruction!")
+        }
+    </script>
+  </head>
+  <body onload="contruction()">
+
+     <div class="range">
+       Enter number range to work on<br>
+       <input  id="range" type="number" >
+     </div>
+    <div class="math">
+     <div id="left" >
+
+     </div>
+     <div id="sign">
+       +
+     </div>
+     <div id="right">
+
+     </div>
+     <div id="equal">
+       =
+     </div>
+
+     <div id="answer">
+  <input type="text" onclick="set()"id="ans" >
+  <input type="button" onclick="check()"value="check">
+     </div>
+    </div>
+   <label id="confirm"></label>
+  </body>
+</html>

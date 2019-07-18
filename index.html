@@ -3,87 +3,72 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
-    <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Felipa" rel="stylesheet">
+    <meta name="description" content="Iorvenda Akem web development Portfolio.To read more click on any of the links and drive in or keep it old fashion call/email me to find out how we can help each other.">
+
 <script src="jquery-3.3.1.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <title>Iorvenda Akem</title>
     <style>
     *{
       box-sizing: border-box;
       padding: 0px;
       margin: 0px;
-      background-color: #DFE9FE;
+      background-color: white;
     }
     body{
       font-family: "Lato", sans-serif;
       height: 100%;
-      padding: 0px;
-      margin: 0px;
+      margin-left:8%;
+      margin-right:8%;
       font-weight: 100;
+
     }
+
   #top{
-
-   background-color: #DFE9FE;
+    margin-top:10px;
+   background-color: white;
    width: 100%;
+   height: 30vh;
   }
-  #pic{
-    position: relative;
-  width:180px;
-  height:180px; border-radius:90px;
-  border: 2px solid black;padding:4px;
-  margin-left: auto;
-  margin-right: auto;
+  #pic{ width: 1000px;
+    height: auto;
   }
-    footer{
-  height: 100%;
-  background-color: gray;
-  padding: 2%;
-    }
-
-    #img{
-    background-image: url("scr.png");
-    width: 100%;
-    height:600px;
-    background-size:cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    opacity: .3;
-    z-index: 0;
-      }
 
       h1{
-        font-family: 'Felipa', cursive;
+
         margin-top:0px;
-        padding-top: 2px;
+        padding: 14px;
         color:#1B1E1F;
-        font-size: 200%;
+       font-weight: lighter;
 
       }
     .main{
       width: 100%;
       height: auto;
-      background-color:#DFE9FE;
+
       display: grid;
       grid-template-columns: auto auto;
       margin-left: auto;
       margin-right: auto;
-      padding: 4%;
-
+      margin-bottom: 40%;
+      padding: 1%;
+     background-color: #F0F4F8;
     }
      #a{
       margin: 1%;
-      padding-left: 20px;
-      padding-right: 20px;
-      padding-bottom: 4px;
+       padding: 6%;
       text-align: center;
       border-top-left-radius: 50px;
       border-bottom-right-radius: 50px;
-      font-weight: bold;
+      font-weight: lighter;
+      font-size: 120%;
+     background-color: #F0F4F8;
 
     }
+    #a::first-letter{
+       font-size: 200%;
+       color: black;
+     }
     p{
      font-family: 'Felipa', cursive;
       text-align: center;
@@ -93,7 +78,11 @@
     .contact{
       padding:10%;
       text-align: center;
-      margin-top:10%;
+      margin-top:0%;
+      background-color: #9289AE  ;
+    }
+    .contact a{
+        background-color: #9289AE  ;
     }
     .WhattoExpect{
       text-align: center;
@@ -103,13 +92,13 @@
       width: auto;
       height: 80px;
 grid-column-gap: 6px;
-
+  background-color: #EEF3F7;
+  height: auto;
     }
-    .WhattoExpect{
 
-    }
     a{
       text-decoration: none;
+        background-color: #F0F4F8;
     }
     a:hover{
       color:green;
@@ -118,13 +107,16 @@ grid-column-gap: 6px;
       color:orange;
     }
     #top #welcomedescription{
-         position:absolute;
+display: block;
          left:25%;
          top:45%;
-         font-weight: bold;
+         font-weight:lighter;
          font-family:sans-serif;
          font-size: 250%;
-    color: black;
+    color: white;
+    text-align: center;
+    background-color: #6B99F3;
+    padding: 40px 0 40px 0;
     }
     #menu{
       float:right;
@@ -132,23 +124,43 @@ grid-column-gap: 6px;
     #left{
       font-weight: lighter;
       font-family: sans-serif;
-      padding: 2%;
+      padding: 6%;
+
+ }
+ #left::first-letter{
+   font-size: 200%;
+   color: black;
+ }
+    }
+    #top ,#pic{
+      text-align: center;
     }
     h2{
       text-align: center;
-    }
+      margin-top: 80px;
+      background-color: #9289AE  ;
+      margin-bottom: 0px;
+    padding:20px 0 20px 0;}
     .work_done{
 
       min-height: 140px;
-      max-height: 100px;
-    padding: 4px;
+      max-height: 400px;
+     padding: 4px;
+    background-color: #EEF3F7;
+    }@media only screen and (max-width: 1055px)
+    {
+      .contact{
 
+      }
+      footer{
+        display: none;
+      }
     }
     @media only screen and (max-width: 480px)
 
     {body{
       height: 100%;
-      background-color:
+      background-color:white;
     }
       .main{
         display: grid;
@@ -156,13 +168,13 @@ grid-column-gap: 6px;
         width: 100%;
         padding-left: 2%;
         padding-right: 2%;
-        font-family: cursive;
+
     }
     #welcomedescription{
+text-align: center;
 
-  display: none;
       color:black;
-font-family:sans-serif;
+font-family:sans-serif;display: block;
       }
       #img{
       background-image: url("scr2.png");
@@ -190,7 +202,7 @@ font-family:sans-serif;
     grid-template-columns: auto;
   }
   .contact{
-    display:none;
+
   }
   footer{
 display: none;
@@ -201,7 +213,8 @@ display: none;
 
     {body{
       height: 100%;
-      background-color:
+      background-color:white;
+      margin: 0 2% 0 2%;
     }
       .main{
         display: grid;
@@ -209,14 +222,16 @@ display: none;
         width: 100%;
         padding-left: 2%;
         padding-right: 2%;
-        font-family: cursive;
+        text-align: center;
+
     }
     #welcomedescription{
-
-  display: none;
+       text-align: center;
       color:black;
-font-family:sans-serif;
+      font-family:sans-serif;
+display: block;
       }
+
       #img{
       background-image: url("scr3.png");
       width: 100%;
@@ -242,19 +257,30 @@ font-family:sans-serif;
     display: grid;
     grid-template-columns: auto;
   }
+
   .contact{
-    display: none;
+
     position: fixed;
   }
   footer{
 display: none;
+  }
+  .main, #mainleft{
+ margin:0px;
+ padding: 0;
+ color:green;
+
+  }
+  .main{
+    width: 98%;
   }
 }
     @media only screen and (max-width: 375px)
 
     {body{
       height: 100%;
-      background-color:
+      background-color:white;
+      margin: 0 2% 0 2%;
     }
       .main{
         display: grid;
@@ -262,13 +288,17 @@ display: none;
         width: 100%;
         padding-left: 2%;
         padding-right: 2%;
-        font-family: cursive;
+
+    }
+    #a{
+      display: block;
     }
     #welcomedescription{
-
-  display: none;
+ display: block;
       color:black;
-font-family:sans-serif;
+     font-family:sans-serif;
+      width: 98%;
+      text-align: center;
       }
       #img{
       display: none;
@@ -288,7 +318,7 @@ font-family:sans-serif;
     grid-template-columns: auto;
   }
   .contact{
-    display:none;
+
   }
   footer{
 display: none;
@@ -299,7 +329,8 @@ display: none;
 
   {body{
     height: 100%;
-    background-color:
+    margin: 0 2% 0 2%;
+    background-color:white;
   }
     .main{
       display: grid;
@@ -307,11 +338,11 @@ display: none;
       width: 100%;
       padding-left: 2%;
       padding-right: 2%;
-      font-family: cursive;
+
   }
   #welcomedescription{
-
-display: none;
+ text-align: center;
+display: block;
     color:black;
     font-family:sans-serif;
 
@@ -326,7 +357,7 @@ display: none;
       color:#1B1E1F;
     }
     #a{
-      font-family: cursive;
+
     }
  article{
    font-family:serif;
@@ -338,34 +369,41 @@ display: none;
   grid-template-columns: auto;
 }
 .contact{
-  display:none;
+
 }
 footer{
 display: none;
 }}
     </style>
+    <script >
+    var today = new Date();
+   var  strings=["Software","&","Web","Developer"];
+   var count=0;
+
+    function call() {
+
+      setTimeout(typewriter, 200);
+
+    }
+      function typewriter() {
+
+        if(count<strings.length){
+          var label=document.getElementById("welcomedescription").innerHTML;
+          document.getElementById("welcomedescription").innerHTML=label.concat("\t"+strings[count]);
+
+        count++;
+    setTimeout(call, 100);
+        }
+
+      }
+    </script>
+
   </head>
-  <body onload="year()">
+  <body onload="call()">
 
 <div id="top">
-  <a href="tel:1-616-255-3827" style="float:right">616-232-2330</a><br>
-  <a href="mailTo:iorvenda@yahoo.com" style="float:right">iorvenda@yahoo.com</a>
-  <img id ="pic"src="profileimg.jpg">
-
-<p id="welcomedescription">Application & Web Developer,<br>
-experience counts and thats why I am here!" </p>
-<div id="img">
-
-  <script>
-  $(function(){
-    //$( "#img" ).hide(0).show(3300);
-      $("#img").hide(0).show(3000).fadeIn(3000);
-  });
-  </script>
-
+<p id="welcomedescription"></p>
 </div>
-
-
 <div class="main">
 <div class="mainright">
 
@@ -375,26 +413,37 @@ experience counts and thats why I am here!" </p>
       $("#pic").hide(0).fadeIn(6500);
   });
   </script>
-<article id="a" style="  font-size: 200%;">
+<article id="a" >
 
-  I am Iorvenda Akem, a web Developer from Michigan with a passion for designing Software, Robotics, AI and a love for sports
+  I am Iorvenda Akem, a web Developer from Michigan with a passion for designing Software, Robotics, AI ,I do have  a huge love for sports;
+  I play basketball, batminton and I love boxing.
 <a href="portfolio.html">more...</a>
   </article>
 </div>
 
-</article>
+
 <div class="mainleft">
-
   <article id="left">
-
-
-      Web Developer, master of elegant web designs and mobile applications including
+      Web Developer, experienced in  web development and mobile applications including
       backend development. My weapons of choice include but not limited to html, css and javascript, swift and Java.
-      Your web page does not have to be static add some beauty to it. A hint of JQuery could be the ingredient and a developer will the chef.
+      Your web page does not have to be static or simple, add sprinkle some life into it. A hint of JQuery could be the
+       ingredient and a developer, the chef
+       that cooks it to life.
       Lets  design something awlsome today!
         <a href="connecting.html">Read more...</a>
   </article>
 </div>
+
+</div>
+<div id="img">
+<img src="screencap.png" alt="">
+  <script>
+  $(function(){
+    //$( "#img" ).hide(0).show(3300);
+      $("#img").hide(0).show(3000).fadeIn(3000);
+  });
+
+  </script>
 
 </div>
 
@@ -405,30 +454,30 @@ experience counts and thats why I am here!" </p>
 
 
 <div class="work_done">
-    <a href="readmore.html">First Meeting</a><br>
+    <a href="readmore.html"><span style="font-size: 130%;background-color: #EEF3F7">F</span>irst Meeting</a><br>
     We Discuss what the project is going to do<br>
     what possible technologies will be used.
     <a href="readmore.html">read more...</a>
 </div>
 <div class="work_done">
-    <a href="readmore.html">Draft Process</a><br>
+    <a href="readmore.html"><span style="font-size: 130%;background-color:#EEF3F7 ">D</span>raft Process</a><br>
     At this stage I will write a Pseudocode and a skeleton and<br>
     of what the application will look after completion.
     <a href="readmore.html">read more...</a>
 </div>
 <div class="work_done">
-  <a href="readmore.html">Designing the Prototype</a><br>
+  <a href="readmore.html"><span style="font-size: 130%;background-color: #EEF3F7">D</span>esigning the Prototype</a><br>
   A rough archetype will be implemented,<br> images will be picked and colors to include background colors will be added <br>
   what possible technologies will be used.
   <a href="readmore.html">read more...</a>
 </div>
 <div class="work_done">
-  <a href="readmore.html">Testing</a><br>
+  <a href="readmore.html"><span style="font-size: 130%;background-color: #EEF3F7">T</span>esting</a><br>
   The finished project will then be ran through a vigous testing systems<br>
   and browsers for compatibility.
 </div>
 <div class="work_done">
-  <a href="readmore.html">Completion</a><br>
+  <a href="readmore.html"><span style="font-size: 130%;background-color: #EEF3F7">C</span>ompletion</a><br>
   The best and final step will to hand over the completed project. After this your will have free consultations and updates for 30 days.
 </div>
 

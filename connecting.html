@@ -17,7 +17,9 @@
     font-family: sans-serif;
     font-weight: lighter;
   }
-
+ body{
+   margin: 10px 10px 10px 10px;
+ }
   img{
 
     object-fit: cover;
@@ -27,28 +29,79 @@
 
   }
   .readings{
-    background-color: #DFE9FE;
+    background-color: white;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 100%;
     height: auto;
     margin-top: 5%;
-    padding:10%;
+    padding-left:6%;
+      padding-right:6%;
     border-top-left-radius: 30%;
     border-bottom-right-radius: 10%;
 
   }
+
   h1{
     padding-bottom: 4%;
     text-align: center;
     text-shadow: 1px 1px blue;
-    font-family: cursive;
+
+  }
+  .experience{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-column-gap: 10px;
+    margin: 10px 90px 10px 90px;
+  }
+  h2{
+    color: blue;
+  }
+  .html, .css, .javascript,.jquery,.javaee p{
+
+    width: 100%;
+    min-height: 100px;
+  }
+  p{
+    height: 80%;
+    box-shadow: -10px 20px 12px gray;
+    padding: 12px;
+    width: 100%;
+  }
+  @media only screen and (max-width: 1000px)
+  {
+    .experience{
+      display: grid;
+      grid-template-columns: auto;
+    }
+  }
+  @media only screen and (max-width: 375px)
+  {
+  img{
+    display: none;
+  }
+
+  }
+  @media only screen and (max-width:320px) {
+
+    body{
+      margin-left:6px;
+      margin-right: 6px;
+    }
+    img{
+      display: none;
+    }
+  }
+  @media only screen and (max-width:414px) {
+    img{
+      display: none;
+    }
   }
   </style>
   </head>
   <body>
     <img src="scr.png" alt="">
-    <h1>Welcome To My Page</h1>
+    <h1>Welcome!</h1>
     <div class="readings">
 
       <article id="article">
@@ -65,6 +118,28 @@
 
       });
       </script>
+    </div>
+    <div class="experience">
+      <div class="html">
+         <h2>HTML</h2><hr>
+        <p> I am very experience working with html, its the fondation of all A developer will need to build on.</p>
+      </div>
+      <div class="css">
+        <h2>CSS</h2><hr>
+        <p>Comfort comes only when css in applied. Even with all the html I can cough up CSS is what brings in the magic and I take a lot of comfort in her, beacause without css there wouldnt be a me.</p>
+      </div>
+      <div class="javascript">
+       <h2>Javascript</h2><hr>
+       <p>Some day I will be able to calm my five stars rating in Javascript but for now I can comfortably settle of mid-level.</p>
+      </div>
+      <div class="jquery">
+       <h2>JQuery</h2><hr>
+       <p>New to JQuery but, I have been able to get around projects using a little here and there but for the most part I havent had much need for it even with the flexiblity it offers</p>
+      </div>
+      <div class="javaee">
+         <h2>Java EE</h2><hr>
+         <p>I use Java for all of my backend projects, it fast its easy and has a huge library to support almost everything; GO Java!</p>
+      </div>
     </div>
   </body>
 </html>
