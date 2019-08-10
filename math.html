@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      #main{
+        margin: 4%;
+        display: grid;
+        grid-template-columns: auto auto auto  ;
+      }
+      .math{
+        width: 45px;
+      }
+    </style>
+    <script type="text/javascript">
+      var one = Math.floor((Math.random() * 9) + 1);
+      var two = Math.floor((Math.random() * 9) + 1);
+      var three = Math.floor((Math.random() * 9) + 1);
+      var four = Math.floor((Math.random() * 9) + 1);
+      var five = Math.floor((Math.random() * 9) + 1);
+      var threedigit = Math.floor((Math.random() * 800) + 100);
+      var twodigit = Math.floor((Math.random() * 88) + 10);
+      var threedigit2 = (threedigit+8);
+      var twodigit2 = twodigit+1;
+
+      var t = Math.floor((Math.random() * 88) + 10);
+      var t2 = Math.floor((Math.random() * 78) + 10);
+      function start()
+      {
+
+       threedigit = Math.floor((Math.random() * 800) + 100);
+         twodigit = Math.floor((Math.random() * 88) + 10);
+         threedigit2 = (threedigit+8);
+       twodigit2 = twodigit+1;
+
+         t = Math.floor((Math.random() * 88) + 10);
+         t2 = Math.floor((Math.random() * 78) + 10);
+
+      }
+      function one() {
+         threedigit = Math.floor((Math.random() * 800) + 100);
+         twodigit = Math.floor((Math.random() * 88) + 10);
+         threedigit2 = (threedigit+8);
+         twodigit2 = twodigit+1;
+         document.getElementById("first").innerHTML=threedigit.toString().charAt(0);
+         document.getElementById("second").innerHTML=threedigit.toString().charAt(1);
+         document.getElementById("third").innerHTML=threedigit.toString().charAt(2);
+         document.getElementById("first2").innerHTML=twodigit.toString().charAt(0);
+         document.getElementById("second2").innerHTML=twodigit.toString().charAt(1);
+      }
+      function two()
+      {
+        threedigit = Math.floor((Math.random() * 800) + 100);
+        twodigit = Math.floor((Math.random() * 88) + 10);
+        threedigit2 = (threedigit+8);
+        twodigit2 = twodigit+1;
+        document.getElementById("1").innerHTML=threedigit2.toString().charAt(0);
+        document.getElementById("2").innerHTML=threedigit2.toString().charAt(1);
+        document.getElementById("3").innerHTML=threedigit2.toString().charAt(2);
+        document.getElementById("11").innerHTML=twodigit2.toString().charAt(0);
+        document.getElementById("22").innerHTML=twodigit2.toString().charAt(1);
+      }
+      function three()
+      {
+         var tt = Math.floor((Math.random() * 88) + 10);
+         var t22 = Math.floor((Math.random() * 78) + 10);
+        document.getElementById("31").innerHTML=tt.toString().charAt(0);
+        document.getElementById("32").innerHTML=tt.toString().charAt(1);
+        document.getElementById("33").innerHTML=t22.toString().charAt(0);
+        document.getElementById("34").innerHTML=t22.toString().charAt(1);
+      }
+      function running() {
+       var top=threedigit.toString();
+     var bottom=twodigit.toString();
+document.getElementById("first").innerHTML=threedigit.toString().charAt(0);
+document.getElementById("second").innerHTML=threedigit.toString().charAt(1);
+document.getElementById("third").innerHTML=threedigit.toString().charAt(2);
+document.getElementById("first2").innerHTML=twodigit.toString().charAt(0);
+document.getElementById("second2").innerHTML=twodigit.toString().charAt(1);
+
+document.getElementById("1").innerHTML=threedigit2.toString().charAt(0);
+document.getElementById("2").innerHTML=threedigit2.toString().charAt(1);
+document.getElementById("3").innerHTML=threedigit2.toString().charAt(2);
+document.getElementById("11").innerHTML=twodigit2.toString().charAt(0);
+document.getElementById("22").innerHTML=twodigit2.toString().charAt(1);
+
+
+document.getElementById("31").innerHTML=t.toString().charAt(0);
+document.getElementById("32").innerHTML=t.toString().charAt(1);
+document.getElementById("33").innerHTML=t2.toString().charAt(0);
+document.getElementById("34").innerHTML=t2.toString().charAt(1);
+   }
+
+   function check() {
+   if((twodigit+threedigit)==document.getElementById("answer").value)
+     {
+       document.getElementById("correct_or_not").innerHTML="Correct!";
+
+     }
+     else{
+         document.getElementById("correct_or_not").innerHTML="Try Again!";
+         document.getElementById("answer").value=" ";
+     }
+   }
+
+   function check2() {
+
+     if((threedigit2-twodigit2)==document.getElementById("answer2").value)
+     {
+       document.getElementById("correct_or_not2").innerHTML="Correct!";
+
+     }
+     else{
+         document.getElementById("correct_or_not2").innerHTML="Try Again!";
+         document.getElementById("answer2").value=" ";
+     }
+   }
+   function check3() {
+     if((t+t2)==document.getElementById("answer3").value)
+     {
+       document.getElementById("correct_or_not3").innerHTML="Correct!";
+
+       document.getElementById("answer3").value=" ";
+
+     }
+     else{
+         document.getElementById("correct_or_not3").innerHTML="Try Again!";
+         document.getElementById("answer3").value=" ";
+
+     }
+
+
+   }
+
+
+    </script>
+
+  </head>
+  <body onload="running()">
+    <div id="main">
+      <div class="math">
+      <table>
+        <tr>
+          <td></td> <td id="31">0</td><td id="32">0</td>
+        </tr>
+        <tr>
+          <td>+</td><td id="33">0</td><td id="34">0</td>
+        </tr>
+      </table>
+            <hr >
+
+        <input type="text" id="answer3"   style="width:40px"><label id="correct_or_not3"></label>
+        <input type="button" onclick="check3()" style="background-color:lightgreen;color:white" value="check">
+          </div>
+    <div class="math">
+  <table>
+    <tr>
+      <td></td> <td id="first">0</td><td id="second">0</td> <td id="third">0</td>
+    </tr>
+    <tr>
+      <td>+</td><td></td><td id="first2"></td><td id="second2"></td>
+    </tr>
+  </table>
+        <hr >
+    <input type="text" id="answer"   style="width:40px"value=""><label id="correct_or_not"></label>
+    <input type="button" onclick="check()" style="background-color:lightgreen;color:white" value="check">
+      </div>
+
+    <div class="math">
+    <table>
+      <tr>
+        <td></td> <td id="1">0</td><td id="2">0</td> <td id="3">0</td>
+      </tr>
+      <tr>
+        <td>-</td><td></td><td id="11"></td><td id="22"></td>
+      </tr>
+    </table>
+          <hr >
+
+      <input type="text" id="answer2"   style="width:40px"value=""><label id="correct_or_not2"></label>
+      <input type="button" onclick="check2()" style="background-color:lightgreen;color:white" value="check">
+        </div>
+
+      </div>
+  </body>
+</html>
