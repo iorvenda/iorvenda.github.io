@@ -12,10 +12,92 @@
       .math{
         width: 45px;
       }
+      .countdown{
+        font-size: .8em;
+        color:red;
+        float: right;
+      }
+      .mathblock{
+        width: 80%;
+        padding: 40px;
+        background-color: lightgray;
+        margin: 0 auto;
+      }
+      .scores{
+      display: grid;
+      grid-template-columns: 25%  25%  25%  25%;
+      }
+      .menu{
+        display: grid;
+        grid-template-columns: 25%  25%  25%  25%;
+        grid-column-gap: 4px;
+
+      }
+      .menu button{
+        padding:4% 0 4% 0;
+        background-color: lightblue;
+        color:white;
+        font-size: 1.2em;
+      }
+      .display{
+        display: grid;
+        grid-template-columns: auto;
+
+
+      }
+      .numbox{
+        display: grid;
+        grid-template-columns: auto;
+        background-color: lightblue;
+        width: 100px;
+        height:auto;
+        margin: 0 auto ;
+        margin-top: 4px;
+        text-align: center;
+      }
+      .top{
+        display: grid;
+        grid-template-columns: auto auto;
+
+      }
+      .bottom{
+        display: grid;
+        grid-template-columns: auto auto;
+      }
+      #problem1, #problem2, #sign{
+        font-size: 2em;
+        display: block;
+        text-align: center;
+      }
+      .correctOrNot{
+        background-color: lightgreen;
+        font-size: 1.5em;
+        width: 400px;
+        height: 40px;
+        margin: 0 auto ;
+        margin-top: 4px;
+        display: block;
+        text-align: center;
+      }
+      .option_for_answers{
+        display: grid;
+        grid-template-columns: 25%  25%  25%  25%;
+        grid-column-gap: 4px;
+        width: 100%;
+        height: 40px;
+        margin-top: 4px;
+        text-align: center;
+
+      }
+      .box1, .box2, .box3,.box4{
+border:2px solid white;
+background-color: lightgreen;
+border-radius: 8px;
+      }
     </style>
-    <script type="text/javascript">
-      var one = Math.floor((Math.random() * 9) + 1);
-      var two = Math.floor((Math.random() * 9) + 1);
+    <script >
+      var one = Math.floor((Math.random()* 90) + 10);
+      var two = Math.floor((Math.random() * 30) + 10);
       var three = Math.floor((Math.random() * 9) + 1);
       var four = Math.floor((Math.random() * 9) + 1);
       var five = Math.floor((Math.random() * 9) + 1);
@@ -26,6 +108,37 @@
 
       var t = Math.floor((Math.random() * 88) + 10);
       var t2 = Math.floor((Math.random() * 78) + 10);
+      function countdown() {
+
+        var countDownDate = new Date("Jan 5, 2021 15:37:59").getTime();
+        var x = setInterval(function() {
+          var now = new Date().getTime();
+          var distance = countDownDate - now;
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+          document.getElementById("timer").innerHTML =  seconds+"sec";
+          if (seconds ===0) {
+            clearInterval(x);
+            document.getElementById("timer").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+      }
+      function secmath()
+      {
+        document.getElementById("problem1").innerHTML=one;
+        document.getElementById("problem2").innerHTML=two;
+      }
+      function add() {
+        document.getElementById("sign").innerHTML = "+";
+      }
+      function sub() {
+        document.getElementById("sign").innerHTML = "-";
+      }
+      function mul() {
+        document.getElementById("sign").innerHTML = "x";
+      }
+      function div() {
+        document.getElementById("sign").innerHTML = "/";
+      }
       function start()
       {
 
@@ -137,7 +250,7 @@ document.getElementById("34").innerHTML=t2.toString().charAt(1);
     </script>
 
   </head>
-  <body onload="running()">
+  <body onload="running(),secmath(),countdown()">
     <div id="main">
       <div class="math">
       <table>
@@ -182,6 +295,72 @@ document.getElementById("34").innerHTML=t2.toString().charAt(1);
       <input type="button" onclick="check2()" style="background-color:lightgreen;color:white" value="check">
         </div>
 
+      </div>
+      <div class="mathblock">
+        <div class="countdown">
+          Time Remaining:<label id="timer"></label>
+        </div>
+
+        <div class="scores">
+          <div class="">
+            Addition:<label for="Addition">23</label>pts
+          </div>
+          <div class="">
+             Substraction:<label for="Substraction">45</label>pts
+          </div>
+          <div class="">
+             Multiplication:<label for="Multiplication">34</label>pts
+          </div>
+          <div class="">
+            Division:<label for="Division">55</label>pts
+          </div>
+        </div>
+        <div class="menu">
+          <button type="button" onclick="add()"id="add" name="button">Addition</button>
+          <button type="button" onclick="sub()" id="sub" name="button">Substraction</button>
+          <button type="button" onclick="mul()" id="mul" name="button">Multiplication</button>
+          <button type="button" onclick="div()"id="div" name="button">Division</button>
+        </div>
+        <div class="display">
+          <div class="numbox">
+             <div class="top">
+               <div class="">
+
+               </div>
+               <div class="">
+                 <label id="problem1">24</label>
+               </div>
+
+             </div>
+             <div class="bottom">
+               <div class="sign">
+                 <label id="sign">+</label>
+               </div>
+               <div class="num">
+                 <label id="problem2">2</label>
+               </div>
+
+             </div>
+
+          </div>
+          <div class="correctOrNot">
+  <label for="">CORRECT!</label>
+          </div>
+          <div class="option_for_answers">
+           <div class="box1">
+1
+           </div>
+           <div class="box2">
+2
+           </div>
+           <div class="box3">
+3
+           </div>
+           <div class="box4">
+4
+           </div>
+          </div>
+        </div>
       </div>
   </body>
 </html>
